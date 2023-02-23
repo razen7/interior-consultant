@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+body {
+    background: #181719;
+    color: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    margin: 10px 150px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    font-family: 'Montserrat';
+    font-size: 15px
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+header .right {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 5px;
+    display: flex;
+    gap: 50px;
+}
+
+header .right a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header .right .active {
+    padding-bottom: 5px;
+    border-bottom: 3px solid;
+}
+
+.interior-container {
+    margin-top: 10vh;
+    display: flex;
+    margin-bottom: 20vh;
+}
+
+.interior-container>* {
+    flex: 1;
+}
+
+.interior-container .left {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.interior-container .left .heading {
+
+    font-family: Lora;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.interior-container .left p {
+    width: 80%;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.interior-container .left a {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: unset;
+}
+
+.interior-container img {
+    max-width: 100%;
+}
+
+.interior-container .profile img {
+    width: 45px;
+    border-radius: 50%;
+
+}
+
+.interior-container .profile {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -65px;
+    right: 50px;
+    background-color: #181719;
+    border-radius: 12px;
+    box-shadow: 0 0 2px #18171936;
+}
+
+.interior-container .profile .top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+.interior-container .right {
+    position: relative;
+}
+
+.interior-container .profile-name {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.interior-container .profile-designation {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.interior-container .profile-bottom {
+    font-family: Lora;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 200px;
+
+}
+footer {
+    text-align: center;
+}
