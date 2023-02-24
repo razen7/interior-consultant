@@ -50,6 +50,10 @@ header .right .active {
     border-bottom: 3px solid;
 }
 
+header .right-mbl {
+    display: none;
+}
+
 .interior-container {
     margin-top: 10vh;
     display: flex;
@@ -162,6 +166,76 @@ header .right .active {
     width: 200px;
 
 }
+
 footer {
     text-align: center;
+}
+
+header .right-mbl .menu-box {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .main-container {
+        margin: 10px;
+    }
+
+    header .right-mbl {
+        display: unset;
+    }
+
+    header .right {
+        display: none;
+    }
+
+    .interior-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    header .right-mbl .menu-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        display: unset;
+        background-color: black;
+    }
+
+    header .right-mbl .menu-box .menu-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    header .right-mbl .menu-box .menu-items {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+
+    header .right-mbl .menu-box .menu-items a {
+        color: white;
+        text-decoration: none;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    header .right-mbl .menu-box .menu-items a.active{
+        padding-bottom: 2px;
+        border-bottom: 3px solid white;
+    }
+
+    .hidden{
+        visibility: hidden;
+    }
 }
